@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leader Board</title>
+    <script
+      src="https://kit.fontawesome.com/21c246e8b1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="addPlayer">
+      <div style="font-size: 2rem; font-weight: 500">
+        <span style="font-size: 3rem">A</span>DD
+        <span style="font-size: 3rem">P</span>LAYER
+      </div>
+      <br />
+      <form class="addPlayerForm">
+        <input type="text" placeholder="First Name" />
+        <input type="text" placeholder="Last Name" />
+        <select id="countrySelect"></select>
+        <input type="number" placeholder="Player's Score" />
+        <button type="submit">Add Player</button>
+      </form>
+      <div class="formError"></div>
+    </div>
+
+    <div class="players">
+      <div style="font-size: 2rem; font-weight: 500">
+        <span style="font-size: 3rem">L</span>EADER<span style="font-size: 3rem"
+          >B</span
+        >OARD
+      </div>
+      <div class="championsCards"></div>
+      <div class="leaderboard-header">
+        <div style="text-align: start">&nbsp;&nbsp;Position</div>
+        <div style="text-align: start">Name</div>
+        <div>Country</div>
+        <div>Score</div>
+        <div>Date</div>
+        <div>Delete</div>
+      </div>
+      <div class="leaderboard"></div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
